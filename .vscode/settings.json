@@ -1,0 +1,42 @@
+{
+  "clangd.fallbackFlags": [
+    "-xc++",
+    "-std=c++17",
+    "-D__MQL__",
+    "-D__MQL5__",
+    "-includec:/Users/laveo/.vscode/extensions/ngsoftware.mql-clangd-1.1.63/files/mql_clangd_compat.h",
+    "-fms-extensions",
+    "-fms-compatibility",
+    "-ferror-limit=0",
+    "-Wno-invalid-token-paste",
+    "-Wno-unused-value",
+    "-Wno-unknown-pragmas",
+    "-Wno-writable-strings",
+    "-Xclang",
+    "-Wno-invalid-pp-directive",
+    "-Wno-unknown-directives",
+    "-Wno-language-extension-token",
+    "-Ic:/Users/laveo/AppData/Roaming/MetaQuotes/Terminal/5FFA568149E88FCD5B44D926DCFEAA79/MQL5/Experts/Advisors/test-fly",
+    "-Ic:/Users/laveo/AppData/Roaming/MetaQuotes/Terminal/5FFA568149E88FCD5B44D926DCFEAA79/MQL5/Experts/Advisors/test-fly/Include",
+    "-IC:/Users/laveo/AppData/Local/mql-clangd/mirror/C/Users/laveo/AppData/Roaming/MetaQuotes/Terminal/5FFA568149E88FCD5B44D926DCFEAA79/MQL5/Include"
+  ],
+  "C_Cpp.intelliSenseEngine": "Disabled",
+  "files.associations": {
+    "*.mqh": "cpp",
+    "*.mq4": "cpp",
+    "*.mq5": "cpp"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave": true,
+    "editor.autoIndent": "keep"
+  },
+  "clang-format.executable": "C:\\Users\\laveo\\.vscode\\extensions\\ms-vscode.cpptools-1.35.1-win32-x64\\LLVM\\bin\\clang-format.exe",
+  "clang-format.style": "file",
+  "triggerTaskOnSave.on": true,
+  "triggerTaskOnSave.restart": true,
+  "triggerTaskOnSave.delay": 300,
+  "triggerTaskOnSave.tasks": {
+    "Compile MQL5": ["**/*.mq5"]
+  }
+}

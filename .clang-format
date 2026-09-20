@@ -1,0 +1,43 @@
+# MQL Clang-Format Configuration
+# Prevents clang-format from breaking MQL-specific syntax like #property directives
+
+BasedOnStyle: LLVM
+Language: Cpp
+
+# Indentation
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+
+# Line length - reasonable for MQL code
+ColumnLimit: 0
+
+# Preprocessor formatting - CRITICAL for MQL #property directives
+IndentPPDirectives: None
+
+# Brace style
+BreakBeforeBraces: Attach
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+
+# Blank lines
+MaxEmptyLinesToKeep: 0
+
+# Pointer and reference alignment
+PointerAlignment: Left
+ReferenceAlignment: Left
+
+# Spacing
+SpaceAfterCStyleCast: false
+SpaceBeforeParens: ControlStatements
+SpacesInParentheses: false
+
+# Include sorting - disabled to preserve MQL include order
+SortIncludes: Never
+
+# Alignment
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+AlignTrailingComments: true
+IndentCaseLabels: true

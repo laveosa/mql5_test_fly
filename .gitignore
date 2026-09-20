@@ -1,0 +1,16 @@
+# Compiled MQL5 binaries — regenerated from source, never commit
+*.ex5
+*.ex4
+
+# Compile logs — regenerated on every build
+compile.log
+
+# MetaEditor auto-forward cache (mql-auto-forwards folder)
+.mql-auto-forwards/
+
+# VS Code workspace-local junk (keep tasks/settings, ignore user-specific state)
+.vscode/*.log
+
+# OS junk
+Thumbs.db
+.DS_Store
