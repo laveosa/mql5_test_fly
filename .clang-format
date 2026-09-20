@@ -22,7 +22,7 @@ AllowShortIfStatementsOnASingleLine: Never
 AllowShortLoopsOnASingleLine: false
 
 # Blank lines
-MaxEmptyLinesToKeep: 0
+MaxEmptyLinesToKeep: 1
 
 # Pointer and reference alignment
 PointerAlignment: Left

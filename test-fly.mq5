@@ -15,6 +15,9 @@ CTrade* Trade;
 //+------------------------------------------------------------------+
 int OnInit() {
   Trade = new CTrade;
+
+  string text = "some text for test";
+
   return (INIT_SUCCEEDED);
 }
 //+------------------------------------------------------------------+
