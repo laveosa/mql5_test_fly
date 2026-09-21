@@ -47,6 +47,8 @@
   "triggerTaskOnSave.tasks": {
     "Compile MQL5": ["**/*.mq5", "**/*.mqh"]
   },
+  "path-intellisense.autoSlashAfterDirectory": true,
+  "path-intellisense.autoTriggerNextSuggestion": true,
 
   // ENV_DATA
   "mql5.metaeditorPath": "C:/Program Files/RoboForex MT5 Terminal/metaeditor64.exe",

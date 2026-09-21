@@ -37,7 +37,7 @@ SpacesInParentheses: false
 SortIncludes: Never
 
 # Alignment
-AlignConsecutiveAssignments: true
-AlignConsecutiveDeclarations: true
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
 AlignTrailingComments: true
 IndentCaseLabels: true
