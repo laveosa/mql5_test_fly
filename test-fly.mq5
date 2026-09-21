@@ -1,34 +1,43 @@
-//+------------------------------------------------------------------+
-//|                                                     test-fly.mq5 |
-//|                                  Copyright 2026, MetaQuotes Ltd. |
-//|                                             https://www.mql5.com |
-//+------------------------------------------------------------------+
 #property copyright "Copyright 2026, MetaQuotes Ltd."
 #property link "https://www.mql5.com"
 #property version "1.00"
-#include <Trade\Trade.mqh>
-// #include "Include\RiskManagement.mqh"
-// #include "Include\TradeExecution.mqh"
-CTrade* Trade;
-//+------------------------------------------------------------------+
-//| Expert initialization function                                   |
-//+------------------------------------------------------------------+
-int OnInit() {
-  Trade = new CTrade;
 
-  string text = "some text for test";
+#include <Trade\Trade.mqh>
+
+#include "Include\Inputs.mqh"
+#include "Include\Globals.mqh"
+#include "Include\Utils.mqh"
+#include "Include\ChartVisuals.mqh"
+#include "Include\RiskManagement.mqh"
+#include "Include\TradeExecution.mqh"
+#include "Include\SignalLogic.mqh"
+
+int OnInit() {
+  SetTemplateView();
+
+  Trade = new CTrade;
+  Trade.SetExpertMagicNumber(EAMagic);
+  Trade.SetDeviationInPoints(MaxSlippage * 10);
+
+  LotMax  = SymbolInfoDouble(MySymbol, SYMBOL_VOLUME_MAX);
+  LotMin  = SymbolInfoDouble(MySymbol, SYMBOL_VOLUME_MIN);
+  LotStep = SymbolInfoDouble(MySymbol, SYMBOL_VOLUME_STEP);
+
+  Log("Initialized");
 
   return (INIT_SUCCEEDED);
 }
-//+------------------------------------------------------------------+
-//| Expert deinitialization function                                 |
-//+------------------------------------------------------------------+
+
 void OnDeinit(const int reason) {
   delete Trade;
 }
-//+------------------------------------------------------------------+
-//| Expert tick function                                             |
-//+------------------------------------------------------------------+
+
 void OnTick() {
+  if (CheckEntrySignal()) {
+    OpenBuy();
+  }
+
+  if (CheckExitSignal()) {
+    CloseAllPositions();
+  }
 }
-//+------------------------------------------------------------------+
