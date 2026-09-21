@@ -4,13 +4,13 @@
 
 #include <Trade\Trade.mqh>
 
-#include "Include\Inputs.mqh"
-#include "Include\Globals.mqh"
-#include "Include\Utils.mqh"
-#include "Include\ChartVisuals.mqh"
-#include "Include\RiskManagement.mqh"
-#include "Include\TradeExecution.mqh"
-#include "Include\SignalLogic.mqh"
+#include "Include/Inputs.mqh"
+#include "Include/Globals.mqh"
+#include "Include/Utils.mqh"
+#include "Include/ChartVisuals.mqh"
+#include "Include/RiskManagement.mqh"
+#include "Include/TradeExecution.mqh"
+#include "Include/SignalLogic.mqh"
 
 int OnInit() {
   SetTemplateView();
