@@ -37,6 +37,10 @@
   "triggerTaskOnSave.restart": true,
   "triggerTaskOnSave.delay": 300,
   "triggerTaskOnSave.tasks": {
-    "Compile MQL5": ["**/*.mq5"]
-  }
+    "Compile MQL5": ["**/*.mq5", "**/*.mqh"]
+  },
+  // ENV_DATA
+  "mql5.metaeditorPath": "C:\\Program Files\\RoboForex MT5 Terminal\\metaeditor64.exe",
+  "mql5.rootFile": "test-fly.mq5",
+  "mql5.projectName": "test-fly"
 }

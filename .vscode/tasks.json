@@ -12,16 +12,13 @@
         "-File",
         "${workspaceFolder}/.vscode/compile.ps1",
         "-ExePath",
-        "C:\\Program Files\\RoboForex MT5 Terminal\\metaeditor64.exe",
+        "${config:mql5.metaeditorPath}",
         "-SourceFile",
-        "${file}",
+        "${workspaceFolder}/${config:mql5.rootFile}",
         "-LogFile",
-        "${fileDirname}\\compile.log"
+        "${workspaceFolder}/compile.log"
       ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
+      "group": { "kind": "build", "isDefault": true },
       "presentation": {
         "echo": false,
         "reveal": "always",
