@@ -20,7 +20,7 @@
     "-Ic:/Users/laveo/AppData/Roaming/MetaQuotes/Terminal/5FFA568149E88FCD5B44D926DCFEAA79/MQL5/Experts/Advisors/test-fly/Include",
     "-IC:/Users/laveo/AppData/Local/mql-clangd/mirror/C/Users/laveo/AppData/Roaming/MetaQuotes/Terminal/5FFA568149E88FCD5B44D926DCFEAA79/MQL5/Include"
   ],
-  "C_Cpp.intelliSenseEngine": "Disabled",
+  "C_Cpp.intelliSenseEngine": "Default",
   "files.associations": {
     "*.mqh": "cpp",
     "*.mq4": "cpp",
