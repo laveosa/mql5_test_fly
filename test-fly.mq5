@@ -19,8 +19,8 @@ int OnInit() {
   Trade.SetExpertMagicNumber(EAMagic);
   Trade.SetDeviationInPoints(MaxSlippage * 10);
 
-  LotMax  = SymbolInfoDouble(MySymbol, SYMBOL_VOLUME_MAX);
-  LotMin  = SymbolInfoDouble(MySymbol, SYMBOL_VOLUME_MIN);
+  LotMax = SymbolInfoDouble(MySymbol, SYMBOL_VOLUME_MAX);
+  LotMin = SymbolInfoDouble(MySymbol, SYMBOL_VOLUME_MIN);
   LotStep = SymbolInfoDouble(MySymbol, SYMBOL_VOLUME_STEP);
 
   Log("Initialized");
