@@ -5,10 +5,16 @@
 # Compile logs — regenerated on every build
 compile.log
 
-# MetaEditor auto-forward cache (mql-auto-forwards folder)
+# MetaEditor auto-forward cache (legacy, kept for safety)
 .mql-auto-forwards/
 
-# VS Code workspace-local junk (keep tasks/settings, ignore user-specific state)
+# clangd background symbol index — machine-specific, large, regenerated automatically
+.cache/
+
+# clangd compile database — contains machine-specific absolute paths
+compile_commands.json
+
+# VS Code workspace-local junk
 .vscode/*.log
 
 # OS junk

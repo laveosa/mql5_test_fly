@@ -4,13 +4,13 @@
 
 #include <Trade\Trade.mqh>
 
-#include "Include\Inputs.mqh"
-#include "Include\Globals.mqh"
-#include "Include\Utils.mqh"
-#include "Include\ChartVisuals.mqh"
-#include "Include\RiskManagement.mqh"
-#include "Include\TradeExecution.mqh"
-#include "Include\SignalLogic.mqh"
+#include "Include/Inputs.mqh"
+#include "Include/Globals.mqh"
+#include "Include/Utils.mqh"
+#include "Include/ChartVisuals.mqh"
+#include "Include/RiskManagement.mqh"
+#include "Include/TradeExecution.mqh"
+#include "Include/SignalLogic.mqh"
 
 int OnInit() {
   SetTemplateView();
@@ -19,8 +19,8 @@ int OnInit() {
   Trade.SetExpertMagicNumber(EAMagic);
   Trade.SetDeviationInPoints(MaxSlippage * 10);
 
-  LotMax  = SymbolInfoDouble(MySymbol, SYMBOL_VOLUME_MAX);
-  LotMin  = SymbolInfoDouble(MySymbol, SYMBOL_VOLUME_MIN);
+  LotMax = SymbolInfoDouble(MySymbol, SYMBOL_VOLUME_MAX);
+  LotMin = SymbolInfoDouble(MySymbol, SYMBOL_VOLUME_MIN);
   LotStep = SymbolInfoDouble(MySymbol, SYMBOL_VOLUME_STEP);
 
   Log("Initialized");

@@ -1,5 +1,9 @@
 {
   "clangd.fallbackFlags": [
+    "-include",
+    "C:/Users/laveo/.vscode/extensions/ngsoftware.mql-clangd-1.1.63/files/mql_clangd_compat.h",
+    "-IC:/Users/laveo/AppData/Roaming/MetaQuotes/Terminal/5FFA568149E88FCD5B44D926DCFEAA79/MQL5/Experts/Advisors/test-fly",
+    "-IC:/Users/laveo/AppData/Roaming/MetaQuotes/Terminal/5FFA568149E88FCD5B44D926DCFEAA79/MQL5/Experts/Advisors/test-fly/Include",
     "-xc++",
     "-std=c++17",
     "-D__MQL__",
@@ -16,11 +20,11 @@
     "-Wno-invalid-pp-directive",
     "-Wno-unknown-directives",
     "-Wno-language-extension-token",
-    "-Ic:/Users/laveo/AppData/Roaming/MetaQuotes/Terminal/5FFA568149E88FCD5B44D926DCFEAA79/MQL5/Experts/Advisors/test-fly",
-    "-Ic:/Users/laveo/AppData/Roaming/MetaQuotes/Terminal/5FFA568149E88FCD5B44D926DCFEAA79/MQL5/Experts/Advisors/test-fly/Include",
+    "-Id:/trade/projects/test-fly",
+    "-Id:/trade/projects/test-fly/Include",
     "-IC:/Users/laveo/AppData/Local/mql-clangd/mirror/C/Users/laveo/AppData/Roaming/MetaQuotes/Terminal/5FFA568149E88FCD5B44D926DCFEAA79/MQL5/Include"
   ],
-  "C_Cpp.intelliSenseEngine": "Default",
+  "C_Cpp.intelliSenseEngine": "Disabled",
   "files.associations": {
     "*.mqh": "cpp",
     "*.mq4": "cpp",
@@ -31,16 +35,23 @@
     "editor.formatOnSave": true,
     "editor.autoIndent": "keep"
   },
+
+  // Rely on the xaver.clang-format extension's bundled executable or a system PATH installation.
+  // Hardcoding the C++ extension version (e.g., ms-vscode.cpptools-1.35.1...) breaks whenever VS Code updates the extension.
   "clang-format.executable": "C:\\Users\\laveo\\.vscode\\extensions\\ms-vscode.cpptools-1.35.1-win32-x64\\LLVM\\bin\\clang-format.exe",
   "clang-format.style": "file",
+
   "triggerTaskOnSave.on": true,
   "triggerTaskOnSave.restart": true,
   "triggerTaskOnSave.delay": 300,
   "triggerTaskOnSave.tasks": {
-    "Compile MQL5": ["**/*.mq5", "**/*.mqh"]
+    "Compile MQL5": ["*.mq5", "Include/**/*.mqh"]
   },
+  "path-intellisense.autoSlashAfterDirectory": true,
+  "path-intellisense.autoTriggerNextSuggestion": true,
+
   // ENV_DATA
-  "mql5.metaeditorPath": "C:\\Program Files\\RoboForex MT5 Terminal\\metaeditor64.exe",
+  "mql5.metaeditorPath": "C:/Program Files/RoboForex MT5 Terminal/metaeditor64.exe",
   "mql5.rootFile": "test-fly.mq5",
   "mql5.projectName": "test-fly"
 }
