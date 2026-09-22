@@ -45,7 +45,7 @@
   "triggerTaskOnSave.restart": true,
   "triggerTaskOnSave.delay": 300,
   "triggerTaskOnSave.tasks": {
-    "Compile MQL5": ["**/*.mq5", "**/*.mqh"]
+    "Compile MQL5": ["*.mq5", "Include/**/*.mqh"]
   },
   "path-intellisense.autoSlashAfterDirectory": true,
   "path-intellisense.autoTriggerNextSuggestion": true,
