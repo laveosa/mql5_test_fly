@@ -1,5 +1,5 @@
-#ifndef __CHARTVISUALS_MQH__
-#define __CHARTVISUALS_MQH__
+#ifndef __CHART_VISUALS__
+#define __CHART_VISUALS__
 
 void SetTemplateView() {
   ChartSetInteger(0, CHART_MODE, CHART_CANDLES);
@@ -11,4 +11,4 @@ void SetTemplateView() {
   ChartSetInteger(0, CHART_COLOR_CHART_DOWN, clrSalmon);
 }
 
-#endif // __CHARTVISUALS_MQH__
+#endif // __CHART_VISUALS__

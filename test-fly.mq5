@@ -12,7 +12,7 @@
 #include "Include/TradeExecution.mqh"
 #include "Include/SignalLogic.mqh"
 
-int OnInit() {
+int OnInit()      {
   SetTemplateView();
 
   Trade = new CTrade;

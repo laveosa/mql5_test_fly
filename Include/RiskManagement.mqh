@@ -8,8 +8,8 @@ double LotSize() {
     Lot = FixedLot;
   } else {
     double result = VolumeIncrease * AccountInfoDouble(ACCOUNT_BALANCE) / BalanceIncrease;
-    Lot           = NormalizeDouble(result, 2);
-    Lot           = MathRound(Lot / LotStep) * LotStep;
+    Lot = NormalizeDouble(result, 2);
+    Lot = MathRound(Lot / LotStep) * LotStep;
 
     if (Lot > LotMax) {
       Lot = LotMax;
